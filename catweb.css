@@ -1,0 +1,512 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+body{
+	background:#EEBDEC;
+}
+.header{
+	background: linear-gradient(rgba(0,0,0,0.07),rgba(0,0,0,0)),url("purple.jpg") ;
+	height: 100vh;
+	background-size: cover;
+	padding: 0 50px;
+	background-position: center;
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px
+}
+ul{
+	top: 1%;
+    right: 2%;
+	position: absolute;
+    display: flex;
+    list-style: none;
+}
+ ul li{
+    font-size: 1.1rem;
+}
+ ul li a{
+    padding: 5px 20px;
+    text-decoration: none;
+    color:black;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color:antiquewhite;
+	color:black;
+}
+ul li.active a{
+	background-color:#EEA9D9;
+	color:darkorchid
+}
+.logo img{
+	top: 1%;
+	left: 2%;
+	position: absolute;
+	float:left;
+	width: 85px;
+	height: auto;
+}
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+.title{
+	top: 5%;
+	left: 10%;
+	position: absolute;
+	float:left;
+	width: 80px;
+	height: auto;
+	margin-top:0px;
+}
+.titleA{
+	top: 5%;
+	left: 12%;
+	position: absolute;
+	float:left;
+	width: 60px;
+	height: auto;
+	margin-top:0px;
+}
+.text-box{
+	width:90%;
+	color: #640B82;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.text-box h1{
+	font-size: 40px;
+}
+.text-box p{
+	margin: 10px 0 40px;
+	font-size: 17px;
+	color: #46007E;
+}
+.picture img{
+	width: 350px;
+	padding: 5%;
+}
+/*------about------*/
+.about{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 80px;
+}
+.about h1{
+	color:#530357;
+	font-size: 40px;
+	font-weight: 600;
+	padding-bottom: 70px;
+}
+.about h2{
+	color:#530357;
+	font-size: 30px;
+	font-weight: 500;
+	text-align: left;
+}
+.about p{
+	color: #22095A;
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 15px;
+	text-align: left;
+	margin: 15px;
+	padding-bottom: 10px;
+	line-height: 30px;
+}
+.hiking{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 80px;
+}
+.hiking h1{
+	color:#530357;
+	font-size: 40px;
+	font-weight: 600;
+	padding-bottom: 70px;
+}
+.hiking h2{
+	color:#530357;
+	font-size: 30px;
+	font-weight: 500;
+	text-align: left;
+	padding-bottom: 20px;
+}
+.hiking p{
+	color: #22095A;
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 15px;
+	margin: 15px;
+	padding-bottom: 10px;
+	line-height: 30px;
+	text-align: left;
+}
+.row{
+	margin-top:5%;
+	display: flex;
+	justify-content: space-between;
+}
+.hiking-col{
+	flex-basis: 31%;
+	background: #ECA0EE;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+}
+.hiking-col h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+.Quotes{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 80px;
+}
+.Quotes h1{
+	color:#530357;
+	font-size: 40px;
+	font-weight: 600;
+	padding-bottom: 70px;
+}
+.Quotes h2{
+	color:#530357;
+	font-size: 30px;
+	font-weight: 500;
+	text-align: left;
+	padding-bottom: 20px;
+}
+.Quotes p{
+	color: #22095A;
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 15px;
+	margin: 15px;
+	padding-bottom: 10px;
+	line-height: 30px;
+	text-align: left;
+}
+.video-col{
+	flex-basis: 20%;
+	background: #ECA0EE;
+	border-radius: 13px;
+	margin-bottom: 4%;
+	padding: 15px 10px;
+	box-sizing: border-box;
+}
+.audio-col{
+	flex-basis: 20%;
+	background: #ECA0EE;
+	border-radius: 10px;
+	margin-bottom: 4%;
+	padding: 15px 10px;
+	box-sizing: border-box;
+	justify-content: center;
+}
+.audio-col h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+.feedback{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 80px;
+}
+.feedback h1{
+	color:#530357;
+	font-size: 40px;
+	font-weight: 600;
+	padding-bottom: 70px;
+}
+.feedback h2{
+	color:#530357;
+	font-size: 30px;
+	font-weight: 500;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+
+.forms{ 
+    max-width: 500px;
+	width: 100%;
+	background: #ECA0EE;
+	margin: 20px auto;
+	padding :40px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+	text-align: left;
+}
+   
+.forms form {   
+    margin: 0 auto;
+    width: 400px;
+}
+.forms .input_field .check{
+	width:15px;
+	height: 15px;
+	position: relative;
+	display: block;
+	cursor: pointer;
+	padding-top: 15px;
+}
+
+.forms .input_field .check input[type="checkbox"]{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.forms .input_field .check .checkmark{
+	width: 15px;
+	height: 15px;
+	border: 1px solid #2F282F;
+	display: block;
+	position: relative;
+}
+
+.forms .input_field .check .checkmark:before{
+	content: " ";
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	width: 5px;
+	height: 2px;
+	border: 2px solid;
+	border-color: transparent transparent #fff #fff; 
+	transform: rotate(-45deg);
+	display: none;
+	
+}
+
+.forms .input_field .check input[type="checkbox"]:checked ~ .checkmark{
+	background:  #D93030;
+}
+	
+.forms .input_field .check input[type="checkbox"]:checked ~ .checkmark:before{
+	display: block;
+}
+.forms button{
+	width: 100%;
+	padding: 8px 10px;
+	font-size: 15px;
+	border: 0;
+	background: #2F033A;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 3px;
+	outline: none;
+}
+
+.forms :last-child{
+	margin-bottom: 0;
+}
+
+.forms button:hover{
+	background: #813381;
+}
+
+.forms  .custom_select{
+	position: relative;
+	width: 100%;
+	height: 37px;
+}
+.forms  .custom_select select{
+	appearance: none;
+	border: 1px solid #d5dbd9;
+	width: 100%;
+	height: 100%;
+	padding: 8px 10px;
+	border-radius: 3px;
+	outline: none;
+}
+.forms textarea{
+	width: 100%;
+	outline: none;
+	border: 1px solid #d5dbd9;
+	font-size: 15px;
+	padding: 8px 10px;
+	border-radius: 3px;
+	transition: all 0.3s ease;
+}
+
+
+
+
+.footer{
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+	padding-top: 10px;
+}
+.footer h4{
+	margin-bottom: 25px;
+	margin-top: 20px;
+	font-weight: 600;
+	font-size: 25px;
+	letter-spacing: 4px;
+	padding: 200px 0 100px;
+	font-family: sans-serif;
+	color: #370747;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+.footer p{
+	padding: 10px;
+	margin: 25px;
+	font-family: sans-serif;
+	color: #907A97;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	
+}
+
+.social-media{
+	display: flex;
+	justify-content: center;
+}
+
+.footer a{
+	display: flex;
+	background: #9D60AF;
+	height: 75px;
+	width: 75px;
+	margin: 0 15px;
+	border-radius: 8px;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+		        -6px -6px 10px -1px rgba(255,255,255,0.7);
+	border: 1px solid rgba(0,0,0,0);
+	transition: transform 0.5s;
+}
+
+
+.footer a i{
+	font-size: 30px;
+	color: #DFAFDA;
+	transition: transform 0.5;
+}
+
+.footer a:hover{
+	box-shadow:  inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+		         inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+		         -0.5px -0.5px 0px  rgba(255,255,255,1),
+		         0.5px 0.5px 0px rgba(0,0,0,0.15),
+		         0px 12px 10px -10px rgba(0,0,0,0.05);
+	border: 1px solid rgba(0,0,0,0.01);
+	transform: translateY(2px);
+}
+
+.footer a:hover i{
+	transform: scale(0.90);
+}
+
+.footer a:hover .fa-instagram{
+	color: #E7A4B6;
+}
+.footer a:hover .fa-twitter{
+	color: #6B6BD6;
+}
+.footer a:hover .fa-youtube{
+	color: #9B3234;
+}
+.footer a:hover .fa-spotify{
+	color: #45A846;
+}
+
+/*------about me page----*/
+
+
+.sub-header{
+	height: 50vh;
+	width:100%;
+	background-image: linear-gradient(rgba(2,5,20,0.1),rgba(2,5,20,0.1)),url("purple.jpg");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color: #fff;
+}
+.sub-header h1{
+	text-align: center;
+	padding-top: 200px;
+	font-size: 70px;
+}
+
+.sub-header1{
+	height: 50vh;
+	width:100%;
+	background-image: linear-gradient(rgba(2,5,20,0.1),rgba(2,5,20,0.1)),url("purple.jpg");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color: #fff;
+}
+.sub-header1 h1{
+	text-align: center;
+	padding-top: 200px;
+	font-size: 70px;
+}
+
+.sub-header2{
+	height: 50vh;
+	width:100%;
+	background-image: linear-gradient(rgba(2,5,20,0.1),rgba(2,5,20,0.1)),url("purple.jpg");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color: #fff;
+}
+.sub-header2 h1{
+	text-align: center;
+	padding-top: 200px;
+	font-size: 70px;
+}
+
+.sub-header3{
+	height: 50vh;
+	width:100%;
+	background-image: linear-gradient(rgba(2,5,20,0.1),rgba(2,5,20,0.1)),url("purple.jpg");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color: #fff;
+}
+.sub-header3 h1{
+	text-align: center;
+	padding-top: 200px;
+	font-size: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
