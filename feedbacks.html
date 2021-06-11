@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WaniCat</title>
+<link href="catweb.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+
+<body>
+
+	<script>
+    function FEEDBACKS() {
+        var name = document.forms["FeedForm"]["Name"];
+        var email = document.forms["FeedForm"]["EMail"];
+        var nickname = document.forms["FeedForm"]["Nickname"];
+		var what = document.forms["FeedForm"]["Age"];
+  
+        if (name.value == "") {
+            window.alert("Please enter your name.");
+            name.focus();
+            return false;
+        }
+  
+        if (email.value == "") {
+            window.alert(
+              "Please enter a valid e-mail address.");
+            email.focus();
+            return false;
+        }
+  		
+		if (nickname.value == "") {
+            window.alert(
+              "Please enter a nickname.");
+            nickname.focus();
+            return false;
+        }
+      
+  		if (what.selectedIndex < 1) {
+            alert("Please select your age.");
+              what.focus();
+             return false;
+        }
+      
+  
+    
+        return true;
+    }
+</script>
+	
+	
+	
+	
+	<!-------Sub header--->
+	
+	<section class ="sub-header3">
+		<div class="title">
+			<h2><font face = "Arial" color ="#400376"></font></h2>
+		</div>
+			<div class="titleA">
+				<h2><font face ="Georgia" font color ="#490C8B"> Waniemrano</font></h2>
+			</div>
+		<div class = "main">
+			<div class="logo">
+				<img src="kucen kecik.png">
+			</div>
+			<ul>
+				<li class="active"><a href="index.html">*:✧ʜᴏᴍᴇ✧･ﾟ</a> </li>
+				<li><a href="about.html">*:✧ᴀʙᴏᴜᴛ ᴍᴇ✧･ﾟ </a> </li>
+				<li><a href="hiking.html">*:✧ᴏᴜᴛᴅᴏᴏʀꜱ✧･ﾟ</a> </li>
+				<li><a href="quotes.html">*:✧Qᴜᴏᴛᴇꜱꜱᴏɴɢ✧･ﾟ</a> </li>
+				<li><a href="feedbacks.html">*:✧ꜰᴇᴇᴅʙᴀᴄᴋꜱ✧･ﾟ</a> </li>
+			</ul>	
+		</div>
+		
+		<h1>Feedbacks</h1>	
+	</section>
+	
+	
+	
+	<!-----QNA CONTACTS----->
+	
+	<section class="feedback">
+		<h2>𐐪𐑂 ♡Feedbacks Section and Tell Me About You!!♡ 𐐪𐑂</h2>
+		
+		
+		<div class="forms">
+    <form name="FeedForm" action="/submit.php" 
+          onsubmit="return FEEDBACKS()" method="post">
+        <p>Name: <input type="text" 
+                        size="65" name="Name" /></p>
+        <br />
+        <p>Nickname: <input type="text" 
+                           size="65" name="Nickname" /></p>
+        <br />
+        <p>E-mail Address: <input type="text" 
+                               size="65" name="EMail" /></p>
+        <br />
+        <p>
+			Gender :
+				<label>
+				  <input type="radio" value="Female" name="gender">Female
+					<span></span>
+				</label>
+				<label>
+				  <input type="radio" value="Male" name="gender">Male
+					<span></span>
+				</label>
+				
+	  </p>
+        <br />
+        <p>Your Experiences : <textarea cols="55" 
+                               name="Comment"> </textarea></p>
+        <br />
+		
+  		<div class="custom_select">
+        <p>
+            SELECT YOUR AGE :
+          <select type="text" value="" name="Age">
+			  	<option>SELECT</option>
+                <option>18-21 Years Old</option>
+                <option>22 Years old and Above</option>
+            </select>
+        </p>
+		</div>
+		
+        <br />
+        <br />
+		
+        <p>Comments about my page : <textarea cols="55" 
+                               name="Comment"> </textarea></p>
+		
+		<div class="input_field terms">
+				<label class="check">
+					<input type="checkbox">
+					<span class="checkmark"></span>
+				</label>
+			<p>Agreed to terms and conditions</p>	
+			</div>
+       
+		<button type="submit" >Submit</button>
+    </form>
+</div>
+	
+			
+			
+	</section>
+	
+	
+	<!-------Footer -------->
+	<section class="footer">
+		<hr color="#501050">
+		<h4>Social Media</h4>
+		<p>Check out my social media for more!!</p>
+		<div class="social-media">
+			<a href="https://twitter.com/waniemrano"><i class="fab fa-twitter"></i></a>
+			<a href="https://open.spotify.com/user/40mie78zt2zldr7pwmr9wnr42?si=54ff2a419b7c4efa"><i class="fab fa-spotify"></i></a>
+			<a href="https://www.instagram.com/waniemrano/"><i class="fab fa-instagram"></i></a>
+			<a href="https://www.youtube.com/channel/UCqduZ7SVCziFSsfv9kWMYww"><i class="fab fa-youtube"></i></a>
+		</div>
+		<p>Made by <i>WANIEMRANO</i> </p>
+		
+	</section>
+	
+	
+</body>
+</html>
